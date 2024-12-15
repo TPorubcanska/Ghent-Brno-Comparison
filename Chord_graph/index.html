@@ -36,6 +36,15 @@
         .flourish-embed {
             width: 100%;
             max-width: 800px; /* Prevents the graph from becoming too wide on large screens */
+         }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%; /* Makes the image responsive */
+            height: auto;
+            max-height: 400px; /* Optional: Restricts the image height */
         }
     </style>
 </head>
@@ -56,6 +65,12 @@
                 <img src="https://public.flourish.studio/visualisation/15807208/thumbnail" width="100%" alt="chord visualization" />
             </noscript>
         </div>
+    </div>
+
+     <!-- Image Section -->
+    <div class="image-container">
+        <img src="Chord_graph/my-image.jpg" alt="Related Image" />
+        <p>Caption: A descriptive caption for the image.</p>
     </div>
 </body>
 </html>
