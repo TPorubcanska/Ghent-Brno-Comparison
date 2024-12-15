@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Chord Graph</title>
+    <!-- Metadata about the page -->
+    <meta charset="UTF-8"> <!-- Specifies character encoding (UTF-8 for most languages) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices -->
+    <title>Interactive Chord Graph</title> <!-- The title displayed in the browser tab -->
+
+    <!-- CSS styles for formatting -->
     <style>
+        /* Set a clean and readable font for the page */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            line-height: 1.6;
+            line-height: 1.6; /* Increases spacing between lines for better readability */
         }
+        /* Styling for the main heading */
         h1 {
             font-size: 24px;
             text-align: center;
             margin-bottom: 20px;
         }
+        /* Styling for the description text */
         p {
             text-align: center;
-            color: #555;
+            color: #555; /* Light gray color for a softer look */
         }
+        /* Centering the graph and adding spacing */
         .graph-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 30px;
         }
+        /* Making the graph responsive */
         .flourish-embed {
             width: 100%;
-            max-width: 800px; /* Set a max-width for better display on large screens */
+            max-width: 800px; /* Prevents the graph from becoming too wide on large screens */
         }
     </style>
 </head>
 <body>
+    <!-- Title of the page -->
     <h1>Interactive Chord Graph</h1>
-    <p>This is an interactive chord graph visualized using Flourish. It provides insights into relationships between data categories in a visually engaging way.</p>
 
+    <!-- Short description of the graph -->
+    <p>This is an interactive chord graph visualized using Flourish. It shows relationships between categories in a visually engaging way.</p>
+
+    <!-- Graph container -->
     <div class="graph-container">
-        <!-- Flourish Chord Graph Embed -->
+        <!-- Embedding the Flourish graph -->
         <div class="flourish-embed flourish-chord" data-src="visualisation/15807208">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <script src="https://public.flourish.studio/resources/embed.js"></script> <!-- Loads the Flourish embed script -->
             <noscript>
+                <!-- Fallback image if JavaScript is disabled -->
                 <img src="https://public.flourish.studio/visualisation/15807208/thumbnail" width="100%" alt="chord visualization" />
             </noscript>
         </div>
