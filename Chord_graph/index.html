@@ -3,10 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualisations Index</title>
+    <title>Interactive Chord Graph</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            color: #555;
+        }
+        .graph-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .flourish-embed {
+            width: 100%;
+            max-width: 800px; /* Set a max-width for better display on large screens */
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Visualisations</h1>
-    <p>Explore interactive graphs and charts.</p>
+    <h1>Interactive Chord Graph</h1>
+    <p>This is an interactive chord graph visualized using Flourish. It provides insights into relationships between data categories in a visually engaging way.</p>
+
+    <div class="graph-container">
+        <!-- Flourish Chord Graph Embed -->
+        <div class="flourish-embed flourish-chord" data-src="visualisation/15807208">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript>
+                <img src="https://public.flourish.studio/visualisation/15807208/thumbnail" width="100%" alt="chord visualization" />
+            </noscript>
+        </div>
+    </div>
 </body>
 </html>
