@@ -14,21 +14,23 @@
             margin: 20px;
             line-height: 1.6; /* Increases spacing between lines for better readability */
         }
+
         /* Styling for the main heading */
         h1 {
             font-size: 24px;
             text-align: center;
             margin-bottom: 20px;
         }
+
         /* Styling for the description text */
-        p {
-            text-align: center;
-            justify-content: center;
+        .description {
+            text-align: justify; /* Justifies the text */
+            margin: 0 auto; /* Centers the block horizontally */
             max-width: 800px; /* Limit the width of the content for better readability */
-            margin: 20px;
-            line-height: 1.6; /* Improve line spacing */
+            line-height: 1.6; /* Improves line spacing */
             color: #555; /* Light gray color for a softer look */
         }
+
         /* Centering the graph and adding spacing */
         .graph-container {
             display: flex;
@@ -36,15 +38,18 @@
             align-items: center;
             margin-top: 30px;
         }
+
         /* Making the graph responsive */
         .flourish-embed {
             width: 100%;
             max-width: 800px; /* Prevents the graph from becoming too wide on large screens */
-         }
+        }
+
         .image-container {
             text-align: center;
             margin-bottom: 20px;
         }
+
         .image-container img {
             max-width: 100%; /* Makes the image responsive */
             height: auto;
@@ -56,8 +61,8 @@
     <!-- Title of the page -->
     <h1>Interactive Chord Graph of Shared Films between European Cities (1951-1953)</h1>
 
-    <!-- Short description of the graph -->
-    <p>This interactive diagram shows the comparison of shared films in circulation in 1951-1953 among the seven cities in the dataset of European Cinema Audiences project (https://www.europeancinemaaudiences.org/research/). Five of them (Leicester, Ghent, Bari, Goteborg, and Rotterdam) were located in the early-1950s Western Europe, and two of them (Brno and Magdeburg) in the Eastern Europe. The connections between cities represent the number of films two cities shared together. The thin lines between Brno and other cities, except Magdeburg, strongly contrast with the thick lines between Ghent and other Western European cities. Ghent and Brno are connected only with a fragile line of 29 films. The other connections between the rest of the cities were toned down to increase the focus on Brno and Ghent. However, we can see that the lines among Western European cities are in general much thicker. This means that the films screened in cities located outside the area subject to Soviet influence (Bari, Gent, Leicester, Rotterdam) overlap to a much greater extent than behind the Iron Curtain (Brno, Magdeburg). Using this diagram for visualising relationships between cities based on the shared films enabled us to easily spot the difference between East and West and enabled us to compare a massive dataset in one picture. The diagram is a powerful visual representation of the subtle links that developed between film distributions on opposite sides of the Iron Curtain, with strong connections maintained between countries on each side of the divided Europe.</p>
+    <!-- Justified and centered description -->
+    <p class="description">This interactive diagram shows the comparison of shared films in circulation in 1951-1953 among the seven cities in the dataset of European Cinema Audiences project (https://www.europeancinemaaudiences.org/research/). Five of them (Leicester, Ghent, Bari, Goteborg, and Rotterdam) were located in the early-1950s Western Europe, and two of them (Brno and Magdeburg) in the Eastern Europe. The connections between cities represent the number of films two cities shared together. The thin lines between Brno and other cities, except Magdeburg, strongly contrast with the thick lines between Ghent and other Western European cities. Ghent and Brno are connected only with a fragile line of 29 films. The other connections between the rest of the cities were toned down to increase the focus on Brno and Ghent. However, we can see that the lines among Western European cities are in general much thicker. This means that the films screened in cities located outside the area subject to Soviet influence (Bari, Gent, Leicester, Rotterdam) overlap to a much greater extent than behind the Iron Curtain (Brno, Magdeburg). Using this diagram for visualising relationships between cities based on the shared films enabled us to easily spot the difference between East and West and enabled us to compare a massive dataset in one picture. The diagram is a powerful visual representation of the subtle links that developed between film distributions on opposite sides of the Iron Curtain, with strong connections maintained between countries on each side of the divided Europe.</p>
 
     <!-- Graph container -->
     <div class="graph-container">
