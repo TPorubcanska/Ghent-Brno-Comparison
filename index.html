@@ -10,12 +10,13 @@
             font-family: Arial, sans-serif; /* Sets the font for the entire page */
             margin: 0; /* Removes default margin around the page */
             padding: 0; /* Removes default padding around the page */
-            display: grid; /* Use CSS Grid for centering */
-            place-items: center; /* Centers content vertically and horizontally */
-            min-height: 100vh; /* Ensures the body height fills the entire viewport */
+            display: flex; /* Enables Flexbox layout */
+            flex-direction: column; /* Stacks content vertically */
+            align-items: flex-start; /* Aligns content to the left (no horizontal centering) */
+            padding-top: 10vh; /* Moves content closer to the top (adjust this as needed) */
+            height: 100vh; /* Ensures body fills the viewport height */
             background-color: #fefbf5; /* Sets a light background color for contrast */
         }
-
         /* Styling for the main title */
         h1 {
             font-size: 24px; /* Sets the font size for the main title */
