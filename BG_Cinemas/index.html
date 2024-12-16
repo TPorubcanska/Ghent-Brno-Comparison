@@ -9,18 +9,17 @@
             font-family: Arial, sans-serif; /* Sets a clean font for the page */
             margin: 0; /* Removes default margin */
             padding: 0; /* Removes default padding */
-            display: flex;
-            justify-content: center; /* Centers content horizontally */
-            align-items: center; /* Centers content vertically */
-            min-height: 100vh; /* Ensures the body fills the viewport height */
             background-color: #fefbf5; /* Light background for contrast */
             overflow: auto; /* Enables scrolling for overflow content */
         }
 
         .content-container {
-            text-align: center; /* Centers all text inside the container */
+            display: flex; /* Enables Flexbox layout */
+            flex-direction: column; /* Stacks content vertically */
+            align-items: center; /* Centers all content horizontally */
+            text-align: center; /* Centers text inside the container */
             max-width: 800px; /* Limits the width of the content block */
-            margin: 20px; /* Adds padding around the content */
+            margin: 20px auto; /* Centers the content on the page */
             line-height: 1.6; /* Improves line spacing */
         }
 
@@ -33,6 +32,7 @@
 
         .graph-container {
             margin-bottom: 70px; /* Adds space between graph sections */
+            width: 100%; /* Ensures graphs take the full width of the container */
         }
 
         .graph-title {
@@ -60,30 +60,36 @@
     </style>
 </head>
 <body>
-    <!-- Main Title -->
-    <h1 class="main-title">Cinema Exhibition Trends in Brno and Ghent: Country of Production (1951-1953)</h1>
-    
-    <!-- First Graph -->
-    <div class="graph-container">
-        <div class="graph-title">Brno Cinema Profiles, 1951-1953</div>
-        <div class="graph-description">Structure of cinema exhibition profiles in Brno analysed by country of production (1951-1953). The repeating pattern shows a predominance of Czech and Soviet films in the majority of cinemas.
-        <div class="flourish-embed flourish-chart" data-src="visualisation/16931484">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript>
-                <img src="https://public.flourish.studio/visualisation/16931484/thumbnail" width="100%" alt="chart visualization" />
-            </noscript>
+    <div class="content-container">
+        <!-- Main Title -->
+        <h1 class="main-title">Cinema Exhibition Trends in Brno and Ghent: Country of Production (1951-1953)</h1>
+        
+        <!-- First Graph -->
+        <div class="graph-container">
+            <div class="graph-title">Brno Cinema Profiles, 1951-1953</div>
+            <div class="graph-description">
+                Structure of cinema exhibition profiles in Brno analysed by country of production (1951-1953). The repeating pattern shows a predominance of Czech and Soviet films in the majority of cinemas.
+            </div>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/16931484">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript>
+                    <img src="https://public.flourish.studio/visualisation/16931484/thumbnail" width="100%" alt="chart visualization" />
+                </noscript>
+            </div>
         </div>
-    </div>
 
-    <!-- Second Graph -->
-    <div class="graph-container">
-        <div class="graph-title">Gent Cinema Profiles, 1951-1953</div>
-        <div class="graph-description">Structure of cinema exhibition profiles in Ghent analysed by country of production (1951-1953). The repeating pattern shows a predominance of Hollywood films in the majority of cinemas.
-        <div class="flourish-embed flourish-chart" data-src="visualisation/16931958">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript>
-                <img src="https://public.flourish.studio/visualisation/16931958/thumbnail" width="100%" alt="chart visualization" />
-            </noscript>
+        <!-- Second Graph -->
+        <div class="graph-container">
+            <div class="graph-title">Gent Cinema Profiles, 1951-1953</div>
+            <div class="graph-description">
+                Structure of cinema exhibition profiles in Ghent analysed by country of production (1951-1953). The repeating pattern shows a predominance of Hollywood films in the majority of cinemas.
+            </div>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/16931958">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript>
+                    <img src="https://public.flourish.studio/visualisation/16931958/thumbnail" width="100%" alt="chart visualization" />
+                </noscript>
+            </div>
         </div>
     </div>
 </body>
