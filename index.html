@@ -36,12 +36,21 @@
         }
 
         ul {
-            list-style-type: none;
+            list-style-type: none; /* Removes bullet points */
             padding: 0;
         }
 
         li {
-            margin: 15px 0;
+            display: flex; /* Makes the list item a flex container */
+            align-items: center; /* Aligns text and image vertically */
+            margin: 15px 0; /* Adds space between list items */
+        }
+
+        img {
+            width: 60px; /* Sets a fixed width for images */
+            height: auto; /* Keeps aspect ratio */
+            margin-right: 15px; /* Adds space between image and text */
+            border-radius: 5px; /* Optional: Rounds the corners */
         }
 
         a {
@@ -66,20 +75,39 @@
         <p class="subtitle">Welcome to the directory for the Ghent-Brno comparison project. Click on a folder to navigate and explore the data.</p>
         <ul>
             <li>
-                <a href="BG_Cinemas/">Cinemas of Brno and Ghent (1951-1953)</a>
-                <p class="description">Click here for detailed graphs on cinema exhibition trends in Brno and Ghent, focusing on the production countries of the films they showcased.</p>
+                <img src="images/BRNOcountry.png" alt="Brno Cinemas">
+                <div>
+                    <a href="BG_Cinemas/">Cinemas of Brno and Ghent (1951-1953)</a>
+                    <p class="description">Click here for detailed graphs on cinema exhibition trends in Brno and Ghent, focusing on the production countries of the films they showcased.</p>
+                </div>
             </li>
             <li>
-                <a href="ECA_comparison/">Sharing films between the ECA cities (1951-1953)</a>
-                <p class="description">Find here the comparison of Brno and Ghent within a broader context, including other European cities, as part of the European Cinema Audiences (ECA) project.</p>
+                <img src="images/ECA 1951-1953.png" alt="ECA Comparison">
+                <div>
+                    <a href="ECA_comparison/">Sharing films between the ECA cities (1951-1953)</a>
+                    <p class="description">Find here the comparison of Brno and Ghent within a broader context, including other European cities, as part of the European Cinema Audiences (ECA) project.</p>
+                </div>
             </li>
             <li>
-                <a href="BG_exhibition/">Exhibition strategies in Brno and Ghent (1951-1953)</a>
-                <p class="description">Here, you can find graphs comparing screening dates and the number of films shown in Brno and Ghent cinemas, highlighting historical trends in cinema programming.</p>
+                <img src="images/Ghent_DaysFilms.png" alt="Brno and Ghent Exhibition">
+                <div>
+                    <a href="BG_exhibition/">Exhibition strategies in Brno and Ghent (1951-1953)</a>
+                    <p class="description">Here, you can find graphs comparing screening dates and the number of films shown in Brno and Ghent cinemas, highlighting historical trends in cinema programming.</p>
+                </div>
             </li>
             <li>
-                <a href="Network_Ghent/">Cinema exhibition network in Ghent (1951-1953)</a>
-                <p class="description">Click here for an interactive cinema network in Ghent to learn more about the exhibition practices on a local level in 1951-1953.</p>
+                <img src="images/Ghent net_part.png" alt="Ghent Network">
+                <div>
+                    <a href="Network_Ghent/">Cinema exhibition network in Ghent (1951-1953)</a>
+                    <p class="description">Click here for an interactive cinema network in Ghent to learn more about the exhibition practices on a local level in 1951-1953.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/Brno net_part.png" alt="Brno Network">
+                <div>
+                    <a href="Network_Ghent/">Cinema exhibition network in Brno (1951-1953)</a>
+                    <p class="description">Click here for an interactive cinema network in Brno to learn more about the exhibition practices on a local level in 1951-1953.</p>
+                </div>
             </li>
         </ul>
     </div>
