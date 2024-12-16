@@ -5,53 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghent-Brno-Comparison Directory</title>
     <style>
+        /* Styling for the body */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #fefbf5; /* Light background */
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            height: 100vh;
-            background-color: #fefbf5;
         }
 
-        .container {
+        /* Wrapper for the entire content and footer */
+        .wrapper {
             max-width: 800px;
             padding: 20px;
-            text-align: justify;
+            width: 100%; /* Ensures content fills the container width */
         }
 
+        /* Content container */
+        .container {
+            text-align: justify;
+            margin-bottom: 40px; /* Space between content and footer */
+        }
+
+        /* Main title styling */
         h1 {
             font-size: 28px;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
+        /* Introduction block */
         .introduction {
             font-size: 16px;
-            line-height: 1.8; /* Better readability with line height */
-            text-align: justify; /* Justifies the text */
-            margin: 20px 0; /* Adds spacing above and below the introduction */
-            color: #444; /* Darker gray for good contrast */
+            line-height: 1.8;
+            text-align: justify;
+            margin: 20px 0;
+            color: #444;
         }
 
+        /* List styling */
         ul {
-            list-style-type: none; /* Removes bullet points */
+            list-style-type: none;
             padding: 0;
         }
 
         li {
-            display: flex; /* Makes the list item a flex container */
-            align-items: center; /* Aligns text and image vertically */
-            margin: 15px 0; /* Adds space between list items */
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
         }
 
         img {
-            width: 60px; /* Sets a fixed width for images */
-            height: auto; /* Keeps aspect ratio */
-            margin-right: 15px; /* Adds space between image and text */
-            border-radius: 5px; /* Optional: Rounds the corners */
+            width: 60px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 5px;
         }
 
         a {
@@ -68,72 +78,76 @@
             color: #555;
             font-size: 14px;
         }
+
+        /* Footer styling */
         footer {
-            max-width: 800px; /* Aligns footer width with the content */
-            margin: 20px auto; /* Centers the footer horizontally */
-            text-align: center; /* Centers the footer text */
-            font-size: 14px; /* Sets a smaller font size */
-            color: #777; /* Makes the text a lighter gray */
-            border-top: 1px solid #ddd; /* Adds a subtle top border */
-            padding-top: 10px; /* Adds space between the text and the border */
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Comparing Cinema History and Film Culture Across the Iron Curtain.</h1>
+    <div class="wrapper">
+        <!-- Main Content -->
+        <div class="container">
+            <h1>Comparing Cinema History and Film Culture Across the Iron Curtain.</h1>
 
-        <!-- Introduction block -->
-        <p class="introduction">
-            Welcome to the visual library of the research project, 
-            <em>'Looking Over the Iron Curtain: A Theoretical and Methodological Exploration within the Comparative New Cinema History with a Case Study on Brno (Czech Republic), Antwerp, and Ghent (Belgium).' </em>
-            Explore the interactive data visualizations below to uncover insights into cinema exhibition patterns, audience dynamics, and film circulation in Brno and Ghent from 1951 to 1953.
-        </p>
+            <!-- Introduction -->
+            <p class="introduction">
+                Welcome to the visual library of the research project, 
+                <em>'Looking Over the Iron Curtain: A Theoretical and Methodological Exploration within the Comparative New Cinema History with a Case Study on Brno (Czech Republic), Antwerp, and Ghent (Belgium).' </em>
+                Explore the interactive data visualizations below to uncover insights into cinema exhibition patterns, audience dynamics, and film circulation in Brno and Ghent from 1951 to 1953.
+            </p>
 
-        <ul>
-            <li>
-                <img src="images/BRNOcountry.png" alt="Brno Cinemas">
-                <div>
-                    <a href="BG_Cinemas/">Cinemas of Brno and Ghent (1951-1953)</a>
-                    <p class="description">Click here for detailed graphs on cinema exhibition trends in Brno and Ghent, focusing on the production countries of the films they showcased.</p>
-                </div>
-            </li>
-            <li>
-                <img src="images/ECA 1951-1953.png" alt="ECA Comparison">
-                <div>
-                    <a href="ECA_comparison/">Sharing films between the ECA cities (1951-1953)</a>
-                    <p class="description">Find here the comparison of Brno and Ghent within a broader context, including other European cities, as part of the European Cinema Audiences (ECA) project.</p>
-                </div>
-            </li>
-            <li>
-                <img src="images/Ghent_DaysFilms.png" alt="Brno and Ghent Exhibition">
-                <div>
-                    <a href="BG_exhibition/">Exhibition strategies in Brno and Ghent (1951-1953)</a>
-                    <p class="description">Here, you can find graphs comparing screening dates and the number of films shown in Brno and Ghent cinemas, highlighting historical trends in cinema programming.</p>
-                </div>
-            </li>
-            <li>
-                <img src="images/Ghent net_part.png" alt="Ghent Network">
-                <div>
-                    <a href="Network_Ghent/Ghent_network/">Cinema exhibition network in Ghent (1951-1953)</a>
-                    <p class="description">Click here for an interactive cinema network in Ghent to learn more about the exhibition practices on a local level in 1951-1953.</p>
-                </div>
-            </li>
-            <li>
-                <img src="images/Brno net_part.png" alt="Brno Network">
-                <div>
-                    <a href="Network_Brno/Brnonetwork">Cinema exhibition network in Brno (1951-1953)</a>
-                    <p class="description">Click here for an interactive cinema network in Brno to learn more about the exhibition practices on a local level in 1951-1953.</p>
-                </div>
-            </li>
-        </ul>
+            <!-- Links Section -->
+            <ul>
+                <li>
+                    <img src="images/BRNOcountry.png" alt="Brno Cinemas">
+                    <div>
+                        <a href="BG_Cinemas/">Cinemas of Brno and Ghent (1951-1953)</a>
+                        <p class="description">Click here for detailed graphs on cinema exhibition trends in Brno and Ghent, focusing on the production countries of the films they showcased.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/ECA 1951-1953.png" alt="ECA Comparison">
+                    <div>
+                        <a href="ECA_comparison/">Sharing films between the ECA cities (1951-1953)</a>
+                        <p class="description">Find here the comparison of Brno and Ghent within a broader context, including other European cities, as part of the European Cinema Audiences (ECA) project.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/Ghent_DaysFilms.png" alt="Brno and Ghent Exhibition">
+                    <div>
+                        <a href="BG_exhibition/">Exhibition strategies in Brno and Ghent (1951-1953)</a>
+                        <p class="description">Here, you can find graphs comparing screening dates and the number of films shown in Brno and Ghent cinemas, highlighting historical trends in cinema programming.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/Ghent net_part.png" alt="Ghent Network">
+                    <div>
+                        <a href="Network_Ghent/Ghent_network/">Cinema exhibition network in Ghent (1951-1953)</a>
+                        <p class="description">Click here for an interactive cinema network in Ghent to learn more about the exhibition practices on a local level in 1951-1953.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/Brno net_part.png" alt="Brno Network">
+                    <div>
+                        <a href="Network_Brno/Brnonetwork">Cinema exhibition network in Brno (1951-1953)</a>
+                        <p class="description">Click here for an interactive cinema network in Brno to learn more about the exhibition practices on a local level in 1951-1953.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            Created by Terezia Porubcanska (2024), <a href="mailto:porubcanska@phil.muni.cz">porubcanska@phil.muni.cz</a>.  
+            Special thanks to Prof. Dr. Philippe Meers (University of Antwerp, ViDI), Prof. Dr. Daniël Biltereyst (Ghent University),  
+            and Doc. Mgr. Pavel Skopal, Ph.D. (Masaryk University).
+        </footer>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        Created by Terezia Porubcanska (2024), <a href="mailto:porubcanska@phil.muni.cz">porubcanska@phil.muni.cz</a>.  
-        Special thanks to Prof. Dr. Philippe Meers (University of Antwerp, ViDI), Prof. Dr. Daniël Biltereyst (Ghent University),  
-        and Doc. Mgr. Pavel Skopal, Ph.D. (Masaryk University).
-    </footer>
 </body>
 </html>
