@@ -10,33 +10,32 @@
             font-family: Arial, sans-serif; /* Sets the font for the entire page */
             margin: 0; /* Removes default margin around the page */
             padding: 0; /* Removes default padding around the page */
-            display: flex; /* Enables Flexbox layout for centering content */
-            flex-direction: column; /* Stacks content vertically */
-            justify-content: center; /* Vertically centers the content */
-            height: 100vh; /* Makes the body height fill the entire viewport */
+            display: grid; /* Use CSS Grid for centering */
+            place-items: center; /* Centers content vertically and horizontally */
+            min-height: 100vh; /* Ensures the body height fills the entire viewport */
             background-color: #fefbf5; /* Sets a light background color for contrast */
         }
 
-        /* Styling for the main title. */
+        /* Styling for the main title */
         h1 {
             font-size: 24px; /* Sets the font size for the main title */
             text-align: center; /* Centers the main title horizontally */
             margin-bottom: 20px; /* Adds space below the title */
         }
 
-        /* Styling for the unordered list. <ul>: An unordered list that organizes items into a list without any specific order (e.g., bulleted points). */
+        /* Styling for the unordered list */
         ul {
             list-style-type: none; /* Removes default bullet points from the list */
             padding: 0; /* Removes default padding for the list */
             text-align: left; /* Aligns the list content to the left */
         }
 
-        /* Styling for each list item. <li>: A list item inside the unordered list. Each <li> represents one item in the list. */
+        /* Styling for each list item */
         li {
             margin: 15px 0; /* Adds vertical spacing between list items */
         }
 
-        /* Styling for hyperlinks. <a>: A hyperlink element that links to another page or file. The href attribute specifies the link’s destination. */
+        /* Styling for hyperlinks */
         a {
             text-decoration: none; /* Removes the underline from links */
             color: #239f8a; /* Sets the link color to greenish-blue */
@@ -65,33 +64,23 @@
 
         <!-- Unordered list containing links to folders -->
         <ul>
-            <!-- First list item: link to the BG_Cinemas folder -->
             <li>
                 <a href="BG_Cinemas/">Cinemas of Brno and Ghent (1951-1953)</a>
-                <!-- Description of the first folder -->
                 <p class="description">Click here for detailed graphs on cinema exhibition trends in Brno and Ghent, focusing on the production countries of the films they showcased.</p>
             </li>
-            <!-- Second list item: link to the ECA_comparison folder -->
             <li>
                 <a href="ECA_comparison/">Sharing films between the ECA cities (1951-1953)</a>
-                <!-- Description of the second folder -->
                 <p class="description">Find here the comparison of Brno and Ghent within a broader context, including other European cities, as part of the European Cinema Audiences (ECA) project.</p>
             </li>
-            <!-- Third list item: link to the BG_exhibition folder -->
             <li>
                 <a href="BG_exhibition/">Exhibition strategies in Brno and Ghent (1951-1953)</a>
-                <!-- Description of the third folder -->
-                <p class="description">Here, you can find graphs comparing screening dates and the number of films shown in Brno and Ghent cinemas, highlighting historical trends in cinema programming.</p>              
+                <p class="description">Here, you can find graphs comparing screening dates and the number of films shown in Brno and Ghent cinemas, highlighting historical trends in cinema programming.</p>
             </li>
-            <!-- Fourth list item: link to the BG_exhibition folder -->
             <li>
                 <a href="Network_Ghent/">Cinema exhibition network in Ghent (1951-1953)</a>
-                <!-- Description of the third folder -->
-                <p class="description">Click here for an interactive cinema network in Ghent to learn more about the exhibition practices on a local level in 1951-1953.</p>              
+                <p class="description">Click here for an interactive cinema network in Ghent to learn more about the exhibition practices on a local level in 1951-1953.</p>
             </li>
         </ul>
     </div>
 </body>
 </html>
-
-
