@@ -10,9 +10,9 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Minimum height to ensure content starts centered */
+            justify-content: center; /* Centers horizontally */
+            align-items: center; /* Centers vertically */
+            height: 100vh; /* Ensures full viewport height */
             background-color: #fefbf5; /* Light background for contrast */
             overflow: auto; /* Enables scrolling if content exceeds viewport */
         }
@@ -43,22 +43,24 @@
     </style>
 </head>
 <body>
-    <h1>Ghent-Brno-Comparison</h1>
-    <p>Welcome to the directory for the Ghent-Brno comparison project. Click on a folder to navigate and explore the data.</p>
+    <div>
+        <h1>Ghent-Brno-Comparison</h1>
+        <p>Welcome to the directory for the Ghent-Brno comparison project. Click on a folder to navigate and explore the data.</p>
 
-    <ul>
-        <li>
-            <a href="BG_Cinemas/">Cinemas of Brno and Ghent (1951-1953)</a>
-            <p class="description">Click here for detailed graphs on cinema exhibition trends in Brno and Ghent, focusing on the production countries of the films they showcased.</p>
-        </li>
-        <li>
-            <a href="ECA_comparison/">Sharing films between the ECA cities (1951-1953)</a>
-            <p class="description">Find here the comparison of Brno and Ghent within a broader context, including other European cities, as part of the European Cinema Audiences (ECA) project. (ECA) project..</p>
-        </li>
-        <li>
-            <a href="BG_exhibition/">Exhibition strategies in Brno and Ghent (1951-1953)</a>
-            <p class="description">Here, you can find graphs comparing screening dates and the number of films shown in Brno and Ghent cinemas, highlighting historical trends in cinema programming.</p>
-        </li>
-    </ul>
+        <ul>
+            <li>
+                <a href="BG_Cinemas/">Cinemas of Brno and Ghent (1951-1953)</a>
+                <p class="description">Click here for detailed graphs on cinema exhibition trends in Brno and Ghent, focusing on the production countries of the films they showcased.</p>
+            </li>
+            <li>
+                <a href="ECA_comparison/">Sharing films between the ECA cities (1951-1953)</a>
+                <p class="description">Find here the comparison of Brno and Ghent within a broader context, including other European cities, as part of the European Cinema Audiences (ECA) project.</p>
+            </li>
+            <li>
+                <a href="BG_exhibition/">Exhibition strategies in Brno and Ghent (1951-1953)</a>
+                <p class="description">Here, you can find graphs comparing screening dates and the number of films shown in Brno and Ghent cinemas, highlighting historical trends in cinema programming.</p>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
