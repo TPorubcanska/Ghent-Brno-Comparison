@@ -5,65 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghent-Brno-Comparison Directory</title>
     <style>
-        /* Styling for the overall page */
         body {
-            font-family: Arial, sans-serif; /* Sets the font for the entire page */
-            margin: 0; /* Removes default margin around the page */
-            padding: 0; /* Removes default padding around the page */
-            display: flex; /* Enables Flexbox layout */
-            flex-direction: column; /* Stacks content vertically */
-            align-items: flex-start; /* Aligns content to the left (no horizontal centering) */
-            padding-top: 10vh; /* Moves content closer to the top (adjust this as needed) */
-            height: 100vh; /* Ensures body fills the viewport height */
-            background-color: #fefbf5; /* Sets a light background color for contrast */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Horizontally centers content */
+            height: 100vh;
+            background-color: #fefbf5;
         }
-        /* Styling for the main title */
+
         h1 {
-            font-size: 24px; /* Sets the font size for the main title */
-            text-align: center; /* Centers the main title horizontally */
-            margin-bottom: 20px; /* Adds space below the title */
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        /* Styling for the unordered list */
         ul {
-            list-style-type: none; /* Removes default bullet points from the list */
-            padding: 0; /* Removes default padding for the list */
-            text-align: left; /* Aligns the list content to the left */
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
         }
 
-        /* Styling for each list item */
         li {
-            margin: 15px 0; /* Adds vertical spacing between list items */
+            margin: 15px 0;
         }
 
-        /* Styling for hyperlinks */
         a {
-            text-decoration: none; /* Removes the underline from links */
-            color: #239f8a; /* Sets the link color to greenish-blue */
-            font-weight: bold; /* Makes the links bold */
+            text-decoration: none;
+            color: #239f8a;
+            font-weight: bold;
         }
 
-        /* Styling for hyperlinks when hovered */
         a:hover {
-            text-decoration: underline; /* Adds an underline when the link is hovered */
+            text-decoration: underline;
         }
 
-        /* Styling for descriptions under links */
         .description {
-            color: #555; /* Sets the text color to a light gray */
-            font-size: 14px; /* Sets a smaller font size for descriptions */
+            color: #555;
+            font-size: 14px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <!-- Main container for the content -->
     <div>
-        <!-- Main title of the page -->
         <h1>Ghent-Brno-Comparison</h1>
-        <!-- Introductory paragraph explaining the page -->
         <p>Welcome to the directory for the Ghent-Brno comparison project. Click on a folder to navigate and explore the data.</p>
 
-        <!-- Unordered list containing links to folders -->
         <ul>
             <li>
                 <a href="BG_Cinemas/">Cinemas of Brno and Ghent (1951-1953)</a>
@@ -80,6 +70,10 @@
             <li>
                 <a href="Network_Ghent/">Cinema exhibition network in Ghent (1951-1953)</a>
                 <p class="description">Click here for an interactive cinema network in Ghent to learn more about the exhibition practices on a local level in 1951-1953.</p>
+            </li>
+            <li>
+                <a href="Network_Brno/">Cinema exhibition network in Ghent (1951-1953)</a>
+                <p class="description">Click here for an interactive cinema network in Brno to learn more about the exhibition practices on a local level in 1951-1953.</p>
             </li>
         </ul>
     </div>
