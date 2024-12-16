@@ -3,65 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema Programmes Ghent-Brno</title>
+    <title>Cinema Exhibition Trends in Brno and Ghent</title>
     <style>
-        body font-family: Arial, sans-serif;
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Minimum height to ensure content starts centered */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            min-height: 100vh; /* Ensures the body fills the viewport */
             background-color: #fefbf5; /* Light background for contrast */
             overflow: auto; /* Enables scrolling if content exceeds viewport */
         }
+
+        .content-container {
+            text-align: center; /* Centers all text inside the container */
+            max-width: 800px; /* Limits the width of the content block */
+            margin: 20px; /* Adds padding around the content */
+            line-height: 1.6; /* Improves line spacing */
+        }
+
         .main-title {
-            text-align: center;
             font-size: 32px; /* Larger font size for the main title */
-            font-weight: bold;
-            margin-bottom: 30px; /* Adds spacing below the title */
+            font-weight: bold; /* Makes the title bold */
+            margin-bottom: 30px; /* Adds space below the title */
             color: #333; /* Darker color for better visibility */
         }
+
         .graph-container {
-            margin-bottom: 70px;
+            margin-bottom: 70px; /* Adds space between graph sections */
         }
+
         .graph-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 5px;
+            font-size: 18px; /* Sets the font size for graph titles */
+            font-weight: bold; /* Makes graph titles bold */
+            margin-bottom: 15px; /* Adds space below graph titles */
         }
+
         .graph-description {
-            font-size: 14px;
-            margin-bottom: 10px;
-            color: #555;
+            font-size: 14px; /* Sets the font size for graph descriptions */
+            margin-bottom: 15px; /* Adds space below graph descriptions */
+            color: #555; /* Light gray text for better readability */
+        }
+
+        .graph-container img {
+            max-width: 100%; /* Makes images responsive */
+            height: auto; /* Keeps aspect ratio */
+            margin-top: 50px; /* Adds space above images */
+        }
+
+        .caption {
+            font-size: 12px; /* Smaller font size for captions */
+            color: #666; /* Light gray color for captions */
+            margin-top: 10px; /* Adds space above captions */
         }
     </style>
 </head>
 <body>
-    <!-- Main Title -->
-    <h1 class="main-title">Cinema Exhibition Trends in Brno and Ghent: Country of Production (1951-1953)</h1>
-    
-    <!-- First Graph -->
-    <div class="graph-container">
-        <div class="graph-title">Brno Cinema Profiles, 1951-1953</div>
-        <div class="graph-description">Structure of cinema exhibition profiles in Brno analysed by country of production (1951-1953). The repeating pattern shows a predominance of Czech and Soviet films in the majority of cinemas.
-        <div class="flourish-embed flourish-chart" data-src="visualisation/16931484">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript>
-                <img src="https://public.flourish.studio/visualisation/16931484/thumbnail" width="100%" alt="chart visualization" />
-            </noscript>
-        </div>
-    </div>
+    <div class="content-container">
+        <!-- Main Title -->
+        <h1 class="main-title">Cinema Exhibition Trends in Brno and Ghent: Country of Production (1951-1953)</h1>
 
-    <!-- Second Graph -->
-    <div class="graph-container">
-        <div class="graph-title">Gent Cinema Profiles, 1951-1953</div>
-        <div class="graph-description">Structure of cinema exhibition profiles in Ghent analysed by country of production (1951-1953). The repeating pattern shows a predominance of Hollywood films in the majority of cinemas.
-        <div class="flourish-embed flourish-chart" data-src="visualisation/16931958">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript>
-                <img src="https://public.flourish.studio/visualisation/16931958/thumbnail" width="100%" alt="chart visualization" />
-            </noscript>
+        <!-- First Graph Section -->
+        <div class="graph-container">
+            <div class="graph-title">Czechoslovak and Soviet Film Screening Patterns in Brno Cinemas (1951–1953)</div>
+            <div class="graph-description">
+                Brno – This comparison examines the proportions of Czechoslovak and Soviet film productions in terms of their presence in cinema schedules (dark green/red) and the number of screening days they accounted for (light green/red) in individual cinemas between 1951 and 1953. The graphs reveal that Czechoslovak films, while less frequently shown, contributed a larger share of total screening time in most cinemas. In contrast, Soviet films appeared more often in cinema schedules but occupied a smaller proportion of total screening time.
+            </div>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/20810716">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript>
+                    <img src="https://public.flourish.studio/visualisation/20810716/thumbnail" width="100%" alt="chart visualization" />
+                </noscript>
+            </div>
+        </div>
+
+        <!-- Second Graph Section -->
+        <div class="graph-container">
+            <div class="flourish-embed flourish-chart" data-src="visualisation/20810609">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript>
+                    <img src="https://public.flourish.studio/visualisation/20810609/thumbnail" width="100%" alt="chart visualization" />
+                </noscript>
+            </div>
+        </div>
+
+        <!-- Third Graph Section -->
+        <div class="graph-container">
+            <div class="graph-title">Hollywood Film Screening Patterns in Ghent Cinemas (1951–1953)</div>
+            <div class="graph-description">
+                Ghent – This comparison examines the proportions of Hollywood film productions in terms of their presence in cinema schedules (dark blue) and the number of screening days they accounted for (light blue) in individual cinemas between 1951 and 1953. The graphs indicate that the share of Hollywood productions in the total number of films closely aligns with their share of total screening time across all cinemas.
+            </div>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/20810506">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript>
+                    <img src="https://public.flourish.studio/visualisation/20810506/thumbnail" width="100%" alt="chart visualization" />
+                </noscript>
+            </div>
         </div>
     </div>
 </body>
